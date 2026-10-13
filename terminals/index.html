@@ -213,69 +213,152 @@ var intl_tel_input_script = {"url":"https:\/\/kits.rometheme.net\/petronix\/wp-c
 <link rel="apple-touch-icon" href="../wp-content/uploads/sites/54/2025/05/logo-Fav-Icon.png">
 <meta name="msapplication-TileImage" content="https://korea-atlantic-tank.com/wp-content/uploads/sites/54/2025/05/logo-Fav-Icon.png">
 
-<style id="katt-footer-enhance">
-/* Cleaner, more polished footer for Korea Atlantic Tank Terminal */
-footer.elementor-114,
-footer [data-elementor-id="114"],
-.elementor-114 {
-  --katt-footer-bg: #0b1c2c;
-  --katt-footer-accent: #1a9cff;
+
+
+
+<style id="katt-brand-enhance">
+/* ===== Korea Atlantic Tank Terminal – Brand & Footer Overhaul ===== */
+:root {
+  --katt-primary: #0a1628;
+  --katt-accent: #00a3e0;
+  --katt-accent-hover: #0088bc;
+  --katt-text: #e8f0f7;
+  --katt-muted: rgba(232,240,247,0.72);
 }
-.elementor-114 .e-con.e-parent {
-  background: linear-gradient(180deg, #0b1c2c 0%, #07131f 100%) !important;
-  padding-top: 60px !important;
-  padding-bottom: 30px !important;
+
+/* Header logo treatment */
+.rkit-image-container img[src*="logo"],
+.elementor-widget-site-logo img,
+img.wp-image-24 {
+  max-height: 70px !important;
+  width: auto !important;
+  filter: brightness(1.05);
+}
+
+/* Make logo area cleaner */
+.rkit-image-container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+}
+.rkit-image-container a::after {
+  content: "Korea Atlantic Tank Terminal";
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0a1628;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+  max-width: 160px;
+  display: none; /* show only if logo fails or for dual branding */
+}
+
+/* ===== FOOTER – modern redesign while keeping structure ===== */
+footer,
+.elementor-114,
+footer .elementor-114 {
+  background: var(--katt-primary) !important;
+}
+.elementor-114 .e-con.e-parent,
+.elementor-114 .elementor-element-f972fe1 {
+  background: linear-gradient(165deg, #0a1628 0%, #06101c 55%, #040c16 100%) !important;
+  padding: 70px 0 0 !important;
+  border-top: 3px solid var(--katt-accent) !important;
 }
 .elementor-114 .elementor-heading-title {
   color: #ffffff !important;
-  letter-spacing: 0.5px;
-  font-weight: 600 !important;
-  margin-bottom: 18px !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 22px !important;
   position: relative;
+  padding-bottom: 12px !important;
 }
 .elementor-114 .elementor-heading-title::after {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 3px;
-  background: #1a9cff;
-  margin-top: 10px;
-  border-radius: 2px;
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 40px !important;
+  height: 3px !important;
+  background: var(--katt-accent) !important;
+  border-radius: 2px !important;
 }
 .elementor-114 a {
-  transition: color 0.25s ease, transform 0.2s ease;
+  color: var(--katt-muted) !important;
+  transition: color 0.2s ease, padding-left 0.2s ease !important;
+  font-size: 14px !important;
 }
 .elementor-114 a:hover {
-  color: #1a9cff !important;
+  color: var(--katt-accent) !important;
+  padding-left: 4px !important;
 }
 .elementor-114 .rkit-headerinfo,
 .elementor-114 .elementor-icon-list-item,
-.elementor-114 p {
-  color: rgba(255,255,255,0.78) !important;
-  line-height: 1.7 !important;
+.elementor-114 p,
+.elementor-114 .elementor-widget-text-editor {
+  color: var(--katt-muted) !important;
+  line-height: 1.75 !important;
+  font-size: 14px !important;
 }
 .elementor-114 input[type="email"],
-.elementor-114 input[type="text"] {
-  background: rgba(255,255,255,0.08) !important;
-  border: 1px solid rgba(255,255,255,0.15) !important;
+.elementor-114 input[type="text"],
+.elementor-114 .elementor-field {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
   color: #fff !important;
-  border-radius: 6px !important;
-  padding: 12px 16px !important;
+  border-radius: 8px !important;
+  padding: 13px 18px !important;
+  height: auto !important;
+}
+.elementor-114 input::placeholder {
+  color: rgba(255,255,255,0.4) !important;
 }
 .elementor-114 button,
-.elementor-114 .elementor-button {
-  background: #1a9cff !important;
-  border-radius: 6px !important;
-  transition: background 0.25s ease, transform 0.2s ease !important;
+.elementor-114 .elementor-button,
+.elementor-114 .elementor-button-link {
+  background: var(--katt-accent) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.4px !important;
+  padding: 13px 28px !important;
+  border: none !important;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease !important;
+  box-shadow: 0 4px 14px rgba(0,163,224,0.25) !important;
 }
 .elementor-114 button:hover,
 .elementor-114 .elementor-button:hover {
-  background: #0d7ed4 !important;
-  transform: translateY(-1px);
+  background: var(--katt-accent-hover) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0,163,224,0.35) !important;
 }
-/* Copyright bar */
-.elementor-114 .elementor-element[data-id] .elementor-heading-title {
-  font-size: 14px;
+
+/* Copyright bar at bottom of footer */
+.elementor-114 .elementor-element[data-id*=""] .elementor-heading-title {
+  font-size: 13px !important;
+  text-transform: none !important;
+  letter-spacing: 0.3px !important;
+  opacity: 0.85;
+}
+/* Social icons if present */
+.elementor-114 .elementor-social-icon,
+.elementor-114 .elementor-icon {
+  background: rgba(255,255,255,0.08) !important;
+  border-radius: 50% !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.elementor-114 .elementor-social-icon:hover,
+.elementor-114 .elementor-icon:hover {
+  background: var(--katt-accent) !important;
+  transform: translateY(-2px);
+}
+
+/* Extra polish for containers */
+.elementor-114 .e-con {
+  gap: 12px !important;
 }
 </style>
 
@@ -291,7 +374,7 @@ footer [data-elementor-id="114"],
 				<div class="elementor-widget-container">
 					        <div class="rkit-image-container">
             <a class="rkit-image" style="text-decoration: none; border-bottom:none">
-                <img width="350" height="100" src="../wp-content/uploads/sites/54/2025/05/logo.png" class="attachment-full size-full wp-image-24" alt="" decoding="async" srcset="../wp-content/uploads/sites/54/2025/05/logo.png 350w, ../wp-content/uploads/sites/54/2025/05/logo.png 300w" sizes="(max-width: 350px) 100vw, 350px">                                <div class="site-caption"> </div>
+                <img width="350" height="100" src="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%230a1628"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" class="attachment-full size-full wp-image-24" alt="" decoding="async" srcset="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%230a1628"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" sizes="(max-width: 350px) 100vw, 350px">                                <div class="site-caption"> </div>
                             </a>
         </div>
 				</div>
@@ -583,7 +666,7 @@ footer [data-elementor-id="114"],
 		<div class="elementor-element elementor-element-5a082fa e-con-full e-flex e-con e-child" data-id="5a082fa" data-element_type="container">
 				<div class="elementor-element elementor-element-9378bc0 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="9378bc0" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="1920" height="1280" src="../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80" class="attachment-full size-full wp-image-33" alt="" srcset="../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 1920w, ../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 300w, ../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 1024w, ../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 768w, ../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 1536w, ../https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 800w" sizes="(max-width: 1920px) 100vw, 1920px">															</div>
+															<img fetchpriority="high" decoding="async" width="1920" height="1280" src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80" class="attachment-full size-full wp-image-33" alt="" srcset="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 1920w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 300w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 1024w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 768w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 1536w, https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80 800w" sizes="(max-width: 1920px) 100vw, 1920px">															</div>
 				</div>
 		<div class="elementor-element elementor-element-b94da48 e-con-full e-flex e-con e-child" data-id="b94da48" data-element_type="container">
 				<div class="elementor-element elementor-element-01d9fbb elementor-view-framed e-transform elementor-shape-circle elementor-widget elementor-widget-icon" data-id="01d9fbb" data-element_type="widget" data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-3,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
@@ -627,7 +710,7 @@ footer [data-elementor-id="114"],
 				<div class="elementor-widget-container">
 					        <div class="rkit-cta rkit-cta-container-classic">
             <div class="rkit-cta-img__wrapper">
-                <div class="rkit-cta-img__image zoom-in" style="background-image:url('../https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&q=80')">
+                <div class="rkit-cta-img__image zoom-in" style="background-image:url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&q=80')">
                 </div>
                 <div class="rkit-cta-img__overlay">
                 </div>
@@ -685,7 +768,7 @@ footer [data-elementor-id="114"],
                     <h4 class="rkit-cta-title">Korea Atlantic Terminal – The Gateway to Global Trade</h4>
                     <div class="rkit-cta-description"><b>Location: Korea Atlantic, Netherlands</b> <br> The Korea Atlantic terminal is a vital part of the European energy corridor, offering top-tier storage solutions for bulk liquids.</div>
                 </div>
-                <a class="rkit-cta-button " href="../amsterdam" target="_blank" rel="nofollow">
+                <a class="rkit-cta-button " href="../terminals" target="_blank" rel="nofollow">
                                         <i aria-hidden="true" class="rkit-cta-button__icon rtmicon rtmicon-chevron-right"></i>                </a>
             </div>
             <div class="rkit-cta-ribbon ">
@@ -723,7 +806,7 @@ footer [data-elementor-id="114"],
 				<div class="elementor-widget-container">
 					        <div class="rkit-cta rkit-cta-container-classic">
             <div class="rkit-cta-img__wrapper">
-                <div class="rkit-cta-img__image zoom-in" style="background-image:url('../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80')">
+                <div class="rkit-cta-img__image zoom-in" style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80')">
                 </div>
                 <div class="rkit-cta-img__overlay">
                 </div>
@@ -747,7 +830,7 @@ footer [data-elementor-id="114"],
 				<div class="elementor-widget-container">
 					        <div class="rkit-cta rkit-cta-container-classic">
             <div class="rkit-cta-img__wrapper">
-                <div class="rkit-cta-img__image zoom-in" style="background-image:url('../https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=1920&q=80')">
+                <div class="rkit-cta-img__image zoom-in" style="background-image:url('https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=1920&q=80')">
                 </div>
                 <div class="rkit-cta-img__overlay">
                 </div>
@@ -801,11 +884,11 @@ Korea Atlantic Tank Terminal plays a vital role in the global supply chain by en
 				</div>
 				<div class="elementor-element elementor-element-c75a194 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="c75a194" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="1920" height="1280" src="../https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&q=80" class="attachment-full size-full wp-image-51" alt="" srcset="../https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&q=80 1920w" sizes="(max-width: 1920px) 100vw, 1920px">															</div>
+															<img loading="lazy" decoding="async" width="1920" height="1280" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&q=80" class="attachment-full size-full wp-image-51" alt="" srcset="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&q=80 1920w" sizes="(max-width: 1920px) 100vw, 1920px">															</div>
 				</div>
 				<div class="elementor-element elementor-element-9458177 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="9458177" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="1920" height="1280" src="../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80" class="attachment-full size-full wp-image-49" alt="" srcset="../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 1920w, ../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 300w, ../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 1024w, ../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 768w, ../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 1536w, ../https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 800w" sizes="(max-width: 1920px) 100vw, 1920px">															</div>
+															<img loading="lazy" decoding="async" width="1920" height="1280" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80" class="attachment-full size-full wp-image-49" alt="" srcset="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 1920w, https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 300w, https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 1024w, https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 768w, https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 1536w, https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920&q=80 800w" sizes="(max-width: 1920px) 100vw, 1920px">															</div>
 				</div>
 				</div>
 					</div>
@@ -815,6 +898,13 @@ Korea Atlantic Tank Terminal plays a vital role in the global supply chain by en
 				<div class="elementor-element elementor-element-57b3e9e e-con-full e-flex e-con e-parent" data-id="57b3e9e" data-element_type="container">
 		<div class="elementor-element elementor-element-f972fe1 e-con-full e-flex e-con e-child" data-id="f972fe1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-0d82d9e e-con-full e-flex e-con e-child" data-id="0d82d9e" data-element_type="container">
+						<div class="katt-footer-logo" style="margin-bottom:28px;padding:0 15px;">
+							<img src="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%23ffffff"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" alt="Korea Atlantic Tank Terminal" width="220" height="55" style="max-width:220px;height:auto;">
+							<p style="color:rgba(232,240,247,0.65);font-size:13px;margin-top:10px;line-height:1.5;max-width:260px;">
+								Reliable tank storage &amp; terminal services worldwide.
+							</p>
+						</div>
+
 		<div class="elementor-element elementor-element-806bd47 e-con-full e-flex e-con e-child" data-id="806bd47" data-element_type="container">
 		<div class="elementor-element elementor-element-64295e3 e-con-full e-flex e-con e-child" data-id="64295e3" data-element_type="container">
 				<div class="elementor-element elementor-element-f49766b elementor-widget elementor-widget-heading" data-id="f49766b" data-element_type="widget" data-widget_type="heading.default">
@@ -1004,7 +1094,7 @@ Korea Atlantic Tank Terminal plays a vital role in the global supply chain by en
 				</div>
 				<div class="elementor-element elementor-element-8310b40 elementor-widget__width-inherit elementor-widget elementor-widget-image" data-id="8310b40" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img width="1440" height="146" src="../wp-content/uploads/sites/54/2025/06/Bold-Energy.png" class="attachment-full size-full wp-image-155" alt="" srcset="../wp-content/uploads/sites/54/2025/06/Bold-Energy.png 1440w, ../wp-content/uploads/sites/54/2025/06/Bold-Energy.png 300w, ../wp-content/uploads/sites/54/2025/06/Bold-Energy.png 1024w, ../wp-content/uploads/sites/54/2025/06/Bold-Energy.png 768w, ../wp-content/uploads/sites/54/2025/06/Bold-Energy.png 800w" sizes="(max-width: 1440px) 100vw, 1440px">															</div>
+															<img width="1440" height="146" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1440&q=80" class="attachment-full size-full wp-image-155" alt="" srcset="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1440&q=80 1440w, https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1440&q=80 300w, https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1440&q=80 1024w, https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1440&q=80 768w, https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1440&q=80 800w" sizes="(max-width: 1440px) 100vw, 1440px">															</div>
 				</div>
 				</div>
 				</div>
