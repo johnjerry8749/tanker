@@ -208,149 +208,44 @@ var intl_tel_input_script = {"url":"https:\/\/kits.rometheme.net\/petronix\/wp-c
 
 
 
-<style id="katt-brand-enhance">
-/* ===== Korea Atlantic Tank Terminal – Brand & Footer Overhaul ===== */
-:root {
-  --katt-primary: #0a1628;
-  --katt-accent: #00a3e0;
-  --katt-accent-hover: #0088bc;
-  --katt-text: #e8f0f7;
-  --katt-muted: rgba(232,240,247,0.72);
-}
 
-/* Header logo treatment */
-.rkit-image-container img[src*="logo"],
-.elementor-widget-site-logo img,
-img.wp-image-24 {
-  max-height: 70px !important;
+
+
+<style id="katt-clean">
+/* Korea Atlantic Tank Terminal – clean light touch */
+.rkit-image-container img[src*="data:image/svg"],
+img[src*="logo"] {
+  max-height: 64px !important;
   width: auto !important;
-  filter: brightness(1.05);
 }
-
-/* Make logo area cleaner */
-.rkit-image-container a {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none !important;
-}
-.rkit-image-container a::after {
-  content: "Korea Atlantic Tank Terminal";
-  font-family: system-ui, -apple-system, sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  color: #0a1628;
-  letter-spacing: -0.3px;
-  line-height: 1.2;
-  max-width: 160px;
-  display: none; /* show only if logo fails or for dual branding */
-}
-
-/* ===== FOOTER – modern redesign while keeping structure ===== */
-footer,
-.elementor-114,
-footer .elementor-114 {
-  background: var(--katt-primary) !important;
-}
-.elementor-114 .e-con.e-parent,
-.elementor-114 .elementor-element-f972fe1 {
-  background: linear-gradient(165deg, #0a1628 0%, #06101c 55%, #040c16 100%) !important;
-  padding: 70px 0 0 !important;
-  border-top: 3px solid var(--katt-accent) !important;
+/* Footer subtle polish only */
+.elementor-114 {
+  border-top: 3px solid #00a3e0;
 }
 .elementor-114 .elementor-heading-title {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  font-size: 15px !important;
-  letter-spacing: 1.2px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 22px !important;
   position: relative;
-  padding-bottom: 12px !important;
+  padding-bottom: 10px;
 }
 .elementor-114 .elementor-heading-title::after {
-  content: "" !important;
-  position: absolute !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  width: 40px !important;
-  height: 3px !important;
-  background: var(--katt-accent) !important;
-  border-radius: 2px !important;
-}
-.elementor-114 a {
-  color: var(--katt-muted) !important;
-  transition: color 0.2s ease, padding-left 0.2s ease !important;
-  font-size: 14px !important;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #00a3e0;
+  margin-top: 8px;
+  border-radius: 1px;
 }
 .elementor-114 a:hover {
-  color: var(--katt-accent) !important;
-  padding-left: 4px !important;
-}
-.elementor-114 .rkit-headerinfo,
-.elementor-114 .elementor-icon-list-item,
-.elementor-114 p,
-.elementor-114 .elementor-widget-text-editor {
-  color: var(--katt-muted) !important;
-  line-height: 1.75 !important;
-  font-size: 14px !important;
-}
-.elementor-114 input[type="email"],
-.elementor-114 input[type="text"],
-.elementor-114 .elementor-field {
-  background: rgba(255,255,255,0.06) !important;
-  border: 1px solid rgba(255,255,255,0.12) !important;
-  color: #fff !important;
-  border-radius: 8px !important;
-  padding: 13px 18px !important;
-  height: auto !important;
-}
-.elementor-114 input::placeholder {
-  color: rgba(255,255,255,0.4) !important;
+  color: #00a3e0 !important;
 }
 .elementor-114 button,
-.elementor-114 .elementor-button,
-.elementor-114 .elementor-button-link {
-  background: var(--katt-accent) !important;
-  color: #fff !important;
-  border-radius: 8px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.4px !important;
-  padding: 13px 28px !important;
-  border: none !important;
-  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease !important;
-  box-shadow: 0 4px 14px rgba(0,163,224,0.25) !important;
+.elementor-114 .elementor-button {
+  border-radius: 6px !important;
+  transition: background 0.2s ease, transform 0.15s ease !important;
 }
 .elementor-114 button:hover,
 .elementor-114 .elementor-button:hover {
-  background: var(--katt-accent-hover) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(0,163,224,0.35) !important;
-}
-
-/* Copyright bar at bottom of footer */
-.elementor-114 .elementor-element[data-id*=""] .elementor-heading-title {
-  font-size: 13px !important;
-  text-transform: none !important;
-  letter-spacing: 0.3px !important;
-  opacity: 0.85;
-}
-/* Social icons if present */
-.elementor-114 .elementor-social-icon,
-.elementor-114 .elementor-icon {
-  background: rgba(255,255,255,0.08) !important;
-  border-radius: 50% !important;
-  transition: background 0.2s, transform 0.2s !important;
-}
-.elementor-114 .elementor-social-icon:hover,
-.elementor-114 .elementor-icon:hover {
-  background: var(--katt-accent) !important;
-  transform: translateY(-2px);
-}
-
-/* Extra polish for containers */
-.elementor-114 .e-con {
-  gap: 12px !important;
+  transform: translateY(-1px);
 }
 </style>
 
@@ -366,7 +261,7 @@ footer .elementor-114 {
 				<div class="elementor-widget-container">
 					        <div class="rkit-image-container">
             <a class="rkit-image" style="text-decoration: none; border-bottom:none">
-                <img width="350" height="100" src="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%230a1628"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" class="attachment-full size-full wp-image-24" alt="" decoding="async" srcset="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%230a1628"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" sizes="(max-width: 350px) 100vw, 350px">                                <div class="site-caption"> </div>
+                <img width="350" height="100" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20260%2064%22%20fill%3D%22none%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%2210%22%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%226%22%20fill%3D%22%2300a3e0%22/%3E%0A%20%20%3Crect%20x%3D%228%22%20y%3D%226%22%20width%3D%227%22%20height%3D%228%22%20rx%3D%221%22%20fill%3D%22%230077a8%22/%3E%0A%20%20%3Crect%20x%3D%2218%22%20y%3D%224%22%20width%3D%227%22%20height%3D%2210%22%20rx%3D%221%22%20fill%3D%22%230077a8%22/%3E%0A%20%20%3Crect%20x%3D%2228%22%20y%3D%226%22%20width%3D%227%22%20height%3D%228%22%20rx%3D%221%22%20fill%3D%22%230077a8%22/%3E%0A%20%20%3Ctext%20x%3D%2258%22%20y%3D%2228%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2217%22%20fill%3D%22%230a1628%22%3EKorea%20Atlantic%3C/text%3E%0A%20%20%3Ctext%20x%3D%2258%22%20y%3D%2248%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-weight%3D%22500%22%20font-size%3D%2213%22%20fill%3D%22%2300a3e0%22%3ETank%20Terminal%3C/text%3E%0A%3C/svg%3E"http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%230a1628"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" class="attachment-full size-full wp-image-24" alt="" decoding="async" srcset="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20260%2064%22%20fill%3D%22none%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%2210%22%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%226%22%20fill%3D%22%2300a3e0%22/%3E%0A%20%20%3Crect%20x%3D%228%22%20y%3D%226%22%20width%3D%227%22%20height%3D%228%22%20rx%3D%221%22%20fill%3D%22%230077a8%22/%3E%0A%20%20%3Crect%20x%3D%2218%22%20y%3D%224%22%20width%3D%227%22%20height%3D%2210%22%20rx%3D%221%22%20fill%3D%22%230077a8%22/%3E%0A%20%20%3Crect%20x%3D%2228%22%20y%3D%226%22%20width%3D%227%22%20height%3D%228%22%20rx%3D%221%22%20fill%3D%22%230077a8%22/%3E%0A%20%20%3Ctext%20x%3D%2258%22%20y%3D%2228%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2217%22%20fill%3D%22%230a1628%22%3EKorea%20Atlantic%3C/text%3E%0A%20%20%3Ctext%20x%3D%2258%22%20y%3D%2248%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-weight%3D%22500%22%20font-size%3D%2213%22%20fill%3D%22%2300a3e0%22%3ETank%20Terminal%3C/text%3E%0A%3C/svg%3E"http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%230a1628"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" sizes="(max-width: 350px) 100vw, 350px">                                <div class="site-caption"> </div>
                             </a>
         </div>
 				</div>
@@ -673,15 +568,7 @@ footer .elementor-114 {
 	<footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">		<div data-elementor-type="wp-post" data-elementor-id="114" class="elementor elementor-114">
 				<div class="elementor-element elementor-element-57b3e9e e-con-full e-flex e-con e-parent" data-id="57b3e9e" data-element_type="container">
 		<div class="elementor-element elementor-element-f972fe1 e-con-full e-flex e-con e-child" data-id="f972fe1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-0d82d9e e-con-full e-flex e-con e-child" data-id="0d82d9e" data-element_type="container">
-						<div class="katt-footer-logo" style="margin-bottom:28px;padding:0 15px;">
-							<img src="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" stop-color="%2300a3e0"/%3E%3Cstop offset="100%25" stop-color="%23006699"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x="4" y="12" width="48" height="46" rx="4" fill="url(%23g)"/%3E%3Crect x="10" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Crect x="22" y="6" width="8" height="10" rx="1" fill="%2300a3e0"/%3E%3Crect x="34" y="8" width="8" height="8" rx="1" fill="%2300a3e0"/%3E%3Ctext x="66" y="32" font-family="system-ui,sans-serif" font-weight="700" font-size="18" fill="%23ffffff"%3EKorea Atlantic%3C/text%3E%3Ctext x="66" y="52" font-family="system-ui,sans-serif" font-weight="500" font-size="13" fill="%2300a3e0"%3ETank Terminal%3C/text%3E%3C/svg%3E" alt="Korea Atlantic Tank Terminal" width="220" height="55" style="max-width:220px;height:auto;">
-							<p style="color:rgba(232,240,247,0.65);font-size:13px;margin-top:10px;line-height:1.5;max-width:260px;">
-								Reliable tank storage &amp; terminal services worldwide.
-							</p>
-						</div>
-
-		<div class="elementor-element elementor-element-806bd47 e-con-full e-flex e-con e-child" data-id="806bd47" data-element_type="container">
+		<div class="elementor-element elementor-element-0d82d9e e-con-full e-flex e-con e-child" data-id="0d82d9e" data-element_type="container"><div class="elementor-element elementor-element-806bd47 e-con-full e-flex e-con e-child" data-id="806bd47" data-element_type="container">
 		<div class="elementor-element elementor-element-64295e3 e-con-full e-flex e-con e-child" data-id="64295e3" data-element_type="container">
 				<div class="elementor-element elementor-element-f49766b elementor-widget elementor-widget-heading" data-id="f49766b" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
